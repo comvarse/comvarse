@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgba(255, 255, 255, 0.5)
+}
+
+
+.react-tabs__tab--selected {
+  background: none !important;
+  border: none !important;
+  color: black;
+  font-weight: 600;
+}
+
+.react-tabs__tab--selected:after {
+  content: '';
+  position: absolute;
+  height: 4px !important;
+  left: 0px !important;
+  right: 0px !important;
+  bottom: -1px !important;
+  background: #000 !important;
+
+}
+
+.react-tabs__tab:focus:after {
+  content: '';
+  position: absolute;
+  height: 4px !important;
+  left: 0px !important;
+  right: 0px !important;
+  bottom: -1px !important;
+  background: #000 !important;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+  margin: 0 0 10px;
+  padding: 0;
+
+}
+
+.react-tabs__tab {
+  font-size: 21px !important;
+  text-transform: capitalize !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-right: 30px !important;
+  letter-spacing: .04em;
+}
+
+@font-face {
+  font-family: 'Westiga';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Westiga'), url(./WestigaRegular-2OARw.otf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+}
+
+.customFontWestiga {
+  font-family: 'Westiga' !important;
+  font-weight: 600 !important;
+
+}
+
+.customLogo {
+  font-family: 'Westiga' !important;
+  font-weight: 700 !important;
+}
+
+.customFooterHeader {
+  font-family: 'Westiga' !important;
+  font-weight: 400 !important;
+}
