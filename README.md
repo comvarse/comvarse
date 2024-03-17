@@ -1,3 +1,4 @@
+## Installations
 npm install -D tailwindcss
 
 npm install @heroicons/react@v1
